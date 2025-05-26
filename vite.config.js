@@ -6,8 +6,7 @@ export default defineConfig(({ mode }) => {
   const isProd = mode === "production";
 
   return {
-    base: "./", 
-    server: { port: 4008, cors: true },
+    server: { port: 4008},
     build: { target: "esnext" },
     plugins: [
       react(),
