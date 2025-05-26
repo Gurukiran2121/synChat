@@ -19,18 +19,9 @@ export default defineConfig(({ mode }) => {
             : "http://localhost:4006/assets/remoteEntry.js",
         },
         shared: {
-          react: {
-            singleton: true,
-            requiredVersion: "^18.2.0",
-          },
-          "react-dom": {
-            singleton: true,
-            requiredVersion: false,
-          },
-          "@auth0/auth0-react": {
-            singleton: true,
-            requiredVersion: "^2.3.0",
-          },
+          react: { singleton: true, requiredVersion: false },
+          "react-dom": { singleton: true, requiredVersion: false },
+          "@auth0/auth0-react": { singleton: true, requiredVersion: "^2.3.0" },
         },
       }),
     ],
