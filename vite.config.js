@@ -17,11 +17,14 @@ export default defineConfig(({ mode }) => {
           authApp: isProd
             ? "https://authmicroapp.netlify.app/assets/remoteEntry.js"
             : "http://localhost:4006/assets/remoteEntry.js",
+
         },
         shared: {
           react: { singleton: true, requiredVersion: false },
           "react-dom": { singleton: true, requiredVersion: false },
           "@auth0/auth0-react": { singleton: true, requiredVersion: "^2.3.0" },
+          zustand: { singleton: true },
+
         },
       }),
     ],
